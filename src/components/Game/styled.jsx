@@ -38,9 +38,7 @@ export const WrapperField = styled.div`
 WrapperField.displayName = 'WrapperField';
 
 export const Summary = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 0 0 10px 0;
   & > :not(:last-child) {
     margin-right: 10px;

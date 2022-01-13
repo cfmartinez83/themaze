@@ -11,10 +11,7 @@ import { newGame } from 'store/game/actions';
 const NewGame = ({ history }) => {
   const dispatch = useDispatch();
   const [nickName, setNickName] = useState('');
-  const handleOnChange = (value) => {
-    setNickName(value);
-    console.log(value);
-  };
+  const handleOnChange = (value) => setNickName(value);
 
   const handleClose = () => history.push('/');
   const handleContinue = () => {

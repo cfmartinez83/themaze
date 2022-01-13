@@ -22,10 +22,10 @@ const Game = ({ history }) => {
   const [currentX, setCurrentX] = useState();
   const [currentY, setCurrentY] = useState();
   const [finish, setFinish] = useState(false);
+  const [moves, setMoves] = useState(0);
   const [maze, setMaze] = useState();
   const x = 20;
   const y = 20;
-  const [moves, setMoves] = useState(0);
   const handleClose = () => history.push('/');
   const handleMove = (keyCode) => {
     if (!finish) { 
@@ -97,8 +97,6 @@ const Game = ({ history }) => {
 
   if (finish) {
     // detalle del juego
-    console.log(endedAt);
-    console.log((+endedAt - +startedAt));
     return <Win playAgainCallback={ playAgainCallback } nickName={ nickName} moves={ moves } time={ +endedAt - +startedAt }/>;
   }
 
