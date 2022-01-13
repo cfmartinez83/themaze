@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontMedium } from 'styles/font';
+import { device } from 'styles/size';
 
 export const StyledLinkButton = styled.a`
   display: flex;
@@ -11,7 +12,7 @@ export const StyledLinkButton = styled.a`
   text-transform: lowercase;
   cursor: pointer;
   padding: 1rem;
-  font-size: ${ FontMedium };
+  ${ FontMedium }
   color: #212121;
   background-color: #efefef;
   border-radius: 10rem;
@@ -26,6 +27,9 @@ export const StyledLinkButton = styled.a`
   &:hover {
     transition: all 0.1s ease;
     transform: scale(1.05);
+  }
+  @media ${device.tablet} {
+    width: 35vw;
   }
 `;
 StyledLinkButton.displayName = 'StyledLinkButton';

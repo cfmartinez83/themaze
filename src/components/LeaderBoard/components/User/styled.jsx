@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontMedium } from 'styles/font';
+import { device } from 'styles/size';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,20 +13,23 @@ export const Wrapper = styled.div`
     border: 1px solid #dddddd;
     text-align: center;
     background: #fafafa;
-    font-size: ${FontMedium};
+    ${FontMedium}
     color: #212121;
   }
 
   & > :not(:last-child) {
     margin-right: 10px;
   }
+  @media ${device.tablet} {
+    width: 95%;
+  }
 `;
 
 Wrapper.displayName = 'Wrapper';
 
 export const Position = styled.div`
-  width: 15%;
-  min-width: 40px;
+  width: 5%;
+  min-width: 22px;
 `;
 
 Position.displayName = 'Position';

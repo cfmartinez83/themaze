@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 Wrapper.displayName = 'Wrapper';
 
 export const Title = styled.div`
-  font-size: ${FontLarge};
+  ${FontLarge}
   font-weight: bold;
   text-align: center;
   padding: 20px;

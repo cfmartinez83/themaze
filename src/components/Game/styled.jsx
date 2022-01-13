@@ -24,7 +24,7 @@ export const WrapperTitle = styled.div`
 WrapperTitle.displayName = 'WrapperTitle';
 
 export const Title = styled.div`
-  font-size: ${ FontLarge };
+  ${ FontLarge }
   font-weight: bold;
   text-align: center;
   padding: 10px;
@@ -46,7 +46,7 @@ export const Summary = styled.div`
 Summary.displayName = 'Summary';
 
 export const Label = styled.div`
-  font-size: ${ FontSmall };
+  ${ FontSmall }
   font-weight: bold;
   text-align: center;
   color: #212121;
@@ -54,7 +54,7 @@ export const Label = styled.div`
 `;
 
 export const NickName = styled.div`
-  font-size: ${ FontSmall };
+  ${ FontSmall }
   text-align: center;
   color: #212121;
 `;
@@ -62,7 +62,7 @@ export const NickName = styled.div`
 NickName.displayName = 'NickName';
 
 export const Moves = styled.div`
-  font-size: ${ FontSmall };
+  ${ FontSmall }
   text-align: center;
   color: #212121;
 `;

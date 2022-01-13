@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 Wrapper.displayName = 'Wrapper';
 
 export const Title = styled.div`
-  font-size: ${ FontLarge };
+  ${ FontLarge }
   font-weight: bold;
   text-align: center;
   padding: 10px;
@@ -19,7 +19,7 @@ export const Title = styled.div`
 Title.displayName = 'Title';
 
 export const Subtitle = styled.div`
-font-size: ${ FontMedium };
+  ${ FontMedium }
   font-weight: bold;
   text-align: center;
   padding: 10px;
@@ -45,28 +45,28 @@ export const Summary = styled.div`
 Summary.displayName = 'Summary';
 
 export const Label = styled.div`
-  font-size: ${FontMedium};
+   ${FontMedium}
   font-weight: bold;
   text-align: center;
   color: #212121;
   margin-right: 5px;
 `;
 export const NickName = styled.div`
-  font-size: ${FontMedium};
+  ${FontMedium}
   text-align: center;
   color: #212121;
 `;
 NickName.displayName = 'NickName';
 
 export const Moves = styled.div`
-  font-size: ${FontMedium};
+  ${FontMedium}
   text-align: center;
   color: #212121;
 `;
 Moves.displayName = 'Moves';
 
 export const Timer = styled.div`
-  font-size: ${FontMedium};
+  ${FontMedium}
   text-align: center;
   color: #212121;
 `;

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FontMedium } from 'styles/font';
+import { device } from 'styles/size';
 
 export const WrapperButton = styled.button`
   display: flex;
@@ -11,7 +12,7 @@ export const WrapperButton = styled.button`
   text-transform: lowercase;
   cursor: pointer;
   padding: 1rem;
-  font-size: ${ FontMedium };
+  ${ FontMedium }
   color: #484848;
   background-color: #e6e6e6;
   border-radius: 10rem;
@@ -38,5 +39,8 @@ export const WrapperButton = styled.button`
       }
     }
   `}
+  @media ${device.tablet} {
+    width: 35vw;
+  }
 `;
 WrapperButton.displayName = 'WrapperButton';
