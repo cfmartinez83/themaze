@@ -97,7 +97,7 @@ const Game = ({ history }) => {
 
   if (finish) {
     // detalle del juego
-    return <Win playAgainCallback={ playAgainCallback } nickName={ nickName} moves={ moves } time={ +endedAt - +startedAt }/>;
+    return <Win playAgainCallback={ playAgainCallback } nickName={ nickName} moves={ moves } time={ +endedAt - new Date(startedAt) }/>;
   }
 
   return maze ? <Wrapper>

@@ -17,7 +17,7 @@ export const gameEnded = (moves) => {
       const nickName = selectNickName(getState());
       const startedAt = selectStartedAt(getState());
       const endedAt = new Date();
-      const time = +endedAt - +startedAt;
+      const time = +endedAt - new Date(startedAt);
       dispatch({ type: t.GAME_ENDED, moves, endedAt });
       dispatch(addUser(nickName, moves, time));
     }
