@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import { device } from 'styles/size';
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items:center;
+  @media ${device.laptop} { 
+    flex-direction: column;
+  }
 `;
 
 Wrapper.displayName = 'Wrapper';

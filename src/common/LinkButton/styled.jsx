@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontMedium } from 'styles/font';
 
 export const StyledLinkButton = styled.a`
   display: flex;
@@ -6,11 +7,11 @@ export const StyledLinkButton = styled.a`
   align-items: center;
   justify-content: center;
   box-shadow: 0.5rem 0.5rem #212121;
-  width: 20vw;
+  width: 23vw;
   text-transform: lowercase;
   cursor: pointer;
   padding: 1rem;
-  font-size: 3vw;
+  font-size: ${ FontMedium };
   color: #212121;
   background-color: #efefef;
   border-radius: 10rem;

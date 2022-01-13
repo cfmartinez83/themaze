@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { FontMedium } from 'styles/font';
 
 export const WrapperButton = styled.button`
   display: flex;
@@ -6,11 +7,11 @@ export const WrapperButton = styled.button`
   align-items: center;
   justify-content: center;
   box-shadow: 0.5rem 0.5rem grey;
-  width: 20vw;
+  width: 23vw;
   text-transform: lowercase;
   cursor: pointer;
   padding: 1rem;
-  font-size: 3vw;
+  font-size: ${ FontMedium };
   color: #484848;
   background-color: #e6e6e6;
   border-radius: 10rem;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from 'styles/size';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -8,6 +9,10 @@ export const Wrapper = styled.div`
   width: 45vw;
   margin: 0 auto;
   outline:none;
+  @media ${device.tablet} {
+    height: 75vw;
+    width: 75vw;
+  }
 `;
 
 Wrapper.displayName = 'Wrapper';

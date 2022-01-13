@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontMedium } from 'styles/font';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -11,8 +12,7 @@ export const Wrapper = styled.div`
     border: 1px solid #dddddd;
     text-align: center;
     background: #fafafa;
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: ${FontMedium};
     color: #212121;
   }
 
@@ -39,7 +39,6 @@ Name.displayName = 'Name';
 export const Moves = styled.div`
   width: 25%;
   min-width: 40px;
-  font-weight: bold;
 `;
 
 Moves.displayName = 'Moves';
@@ -47,7 +46,6 @@ Moves.displayName = 'Moves';
 export const Time = styled.div`
   width: 25%;
   min-width: 40px;
-  font-weight: bold;
 `;
 
 Time.displayName = 'Time';

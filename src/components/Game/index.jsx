@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { CloseButton } from 'common/CloseButton/styled';
 import { withRouter } from 'react-router-dom';
-import { Wrapper, Title, NickName, Summary, Moves, Label, WrapperField, WrapperTitle } from './styled';
+import { Wrapper, Title, NickName, Summary, Moves, Label, WrapperField, WrapperTitle, Fields } from './styled';
 import { useSelector } from 'react-redux';
 import { selectEndedAt, selectNickName, selectStartedAt } from 'store/game/selectors';
 import Maze from 'common/Maze';
@@ -13,6 +13,8 @@ import { useEffect } from 'react';
 import { BOTTOM_WALL, LEFT_WALL, RIGHT_WALL, TOP_WALL } from 'helpers/maze/constants';
 import Win from 'common/Win';
 import { gameEnded } from 'store/game/actions';
+import Joystick from 'common/Joystick';
+import { BOTTOM, LEFT, RIGHT, TOP } from 'components/Game/constants';
 
 const Game = ({ history }) => {
   const dispatch = useDispatch();
@@ -32,7 +34,7 @@ const Game = ({ history }) => {
       // valido movimientos.
       let isValid = false;
       let current = maze.cells[currentX][currentY];
-      if (keyCode === 37) {
+      if (keyCode === LEFT) {
         const nextY = currentY - 1;
         if (between(nextY, 0, 20)) {
           if (current[LEFT_WALL] && maze.cells[currentX][nextY][RIGHT_WALL]) {
@@ -40,7 +42,7 @@ const Game = ({ history }) => {
             isValid = true;
           }
         }
-      } else if (keyCode === 38) {
+      } else if (keyCode === TOP) {
         const nextX = currentX - 1;
         if (between(nextX, 0, 20)) {
           if (current[TOP_WALL] && maze.cells[nextX][currentY][BOTTOM_WALL]) {
@@ -48,7 +50,7 @@ const Game = ({ history }) => {
             isValid = true;
           }
         }
-      } else if (keyCode === 39) {
+      } else if (keyCode === RIGHT) {
         const nextY = currentY + 1;
         if (between(nextY, 0, 20)) {
           if (current[RIGHT_WALL] && maze.cells[currentX][nextY][LEFT_WALL]) {
@@ -56,7 +58,7 @@ const Game = ({ history }) => {
             isValid = true;
           }
         }
-      } else if (keyCode === 40) {
+      } else if (keyCode === BOTTOM) {
         const nextX = currentX + 1;
         if (between(nextX, 0, 20)) {
           if (current[BOTTOM_WALL] && maze.cells[nextX][currentY][TOP_WALL]) {
@@ -106,19 +108,23 @@ const Game = ({ history }) => {
     <WrapperTitle>
       <Title>The Maze</Title>
       <Summary>
-        <WrapperField>
-          <Label>NickName:</Label>
-          <NickName>{ nickName || 'Unknown' }</NickName>
-        </WrapperField>
-        <WrapperField>
-          <Label>Moves:</Label>
-          <Moves>{ moves }</Moves>
-        </WrapperField>
-        <WrapperField>
-          <Label>Timer:</Label>
-          <Timer />
-        </WrapperField>
+        <Fields>
+          <WrapperField>
+            <Label>NickName:</Label>
+            <NickName>{ nickName || 'Unknown' }</NickName>
+          </WrapperField>
+          <WrapperField>
+            <Label>Moves:</Label>
+            <Moves>{ moves }</Moves>
+          </WrapperField>
+          <WrapperField>
+            <Label>Timer:</Label>
+            <Timer />
+          </WrapperField>
+        </Fields>
+        <Joystick handleUp={ () => handleMove(TOP) } handleDown={ () => handleMove(BOTTOM) } handleLeft={ () => handleMove(LEFT) } handleRight={ () => handleMove(RIGHT) } />
       </Summary>
+
     </WrapperTitle>
   </Wrapper> : null
 };

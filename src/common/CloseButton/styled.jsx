@@ -4,14 +4,17 @@ export const CloseButton = styled.div`
   position: absolute;
   right: 32px;
   top: 32px;
-  width: 32px;
-  height: 32px;
+  width: 3vw;
+  height: 3vw;
   opacity: 0.3;
   cursor: pointer;
   border-radius: 30px;
   background: #484848;
   color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     opacity: 1;
@@ -19,10 +22,9 @@ export const CloseButton = styled.div`
 
   &:before, &:after {
     position: absolute;
-    left: 25px;
     content: ' ';
-    height: 33px;
-    width: 2px;
+    height: 4vw;
+    width: 0.5vw;
     background-color: #fafafa;
   }
 

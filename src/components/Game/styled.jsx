@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { FontLarge, FontSmall } from 'styles/font';
+import { device } from 'styles/size';
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: 900px) {
+  @media ${device.laptop} { 
     flex-direction: column;
     justify-content: center;
   }
@@ -22,7 +24,7 @@ export const WrapperTitle = styled.div`
 WrapperTitle.displayName = 'WrapperTitle';
 
 export const Title = styled.div`
-  font-size: 3.5vw;
+  font-size: ${ FontLarge };
   font-weight: bold;
   text-align: center;
   padding: 10px;
@@ -38,17 +40,13 @@ export const WrapperField = styled.div`
 WrapperField.displayName = 'WrapperField';
 
 export const Summary = styled.div`
-  display: block;
-  padding: 0 0 10px 0;
-  & > :not(:last-child) {
-    margin-right: 10px;
-  }
+  display: flex;
 `;
 
 Summary.displayName = 'Summary';
 
 export const Label = styled.div`
-  font-size: 1.5vw;
+  font-size: ${ FontSmall };
   font-weight: bold;
   text-align: center;
   color: #212121;
@@ -56,7 +54,7 @@ export const Label = styled.div`
 `;
 
 export const NickName = styled.div`
-  font-size: 1.5vw;
+  font-size: ${ FontSmall };
   text-align: center;
   color: #212121;
 `;
@@ -64,9 +62,18 @@ export const NickName = styled.div`
 NickName.displayName = 'NickName';
 
 export const Moves = styled.div`
-  font-size: 1.5vw;
+  font-size: ${ FontSmall };
   text-align: center;
   color: #212121;
 `;
 
 Moves.displayName = 'Moves';
+
+export const Fields = styled.div`
+  padding: 0 0 10px 0;
+  & > :not(:last-child) {
+    margin-right: 10px;
+  }
+`;
+
+Fields.displayName = 'Fields';
