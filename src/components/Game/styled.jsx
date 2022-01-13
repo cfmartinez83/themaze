@@ -30,7 +30,6 @@ export const Title = styled.div`
   ${ FontLarge }
   font-weight: bold;
   text-align: center;
-  padding: 10px;
   color: #212121;
   @media ${device.tablet} and (orientation: landscape) {
     ${ FontMedium }

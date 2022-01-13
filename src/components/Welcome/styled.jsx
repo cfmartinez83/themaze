@@ -18,7 +18,7 @@ Wrapper.displayName = 'Wrapper';
 export const WrapperButtons = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 0;
   & > *:not(:last-child) {
     margin-bottom: 20px;
   }
