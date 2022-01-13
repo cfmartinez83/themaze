@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FontLarge, FontMedium } from 'styles/font';
+import { FontLarge, FontMedium, FontSmall } from 'styles/font';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -19,8 +19,7 @@ export const Title = styled.div`
 Title.displayName = 'Title';
 
 export const Subtitle = styled.div`
-  ${ FontMedium }
-  font-weight: bold;
+  ${ FontSmall }
   text-align: center;
   padding: 10px;
   color: #212121;
@@ -37,7 +36,7 @@ export const Summary = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
   & > :not(:last-child) {
     margin-right: 10px;
   }

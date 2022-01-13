@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CloseButton = styled.div`
   position: absolute;
-  right: 32px;
+  right: 12px;
   top: 32px;
   width: 3vw;
   height: 3vw;

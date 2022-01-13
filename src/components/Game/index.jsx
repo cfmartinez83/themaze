@@ -26,8 +26,8 @@ const Game = ({ history }) => {
   const [finish, setFinish] = useState(false);
   const [moves, setMoves] = useState(0);
   const [maze, setMaze] = useState();
-  const x = 20;
-  const y = 20;
+  const x = 15;
+  const y = 15;
   const handleClose = () => history.push('/');
   const handleMove = (keyCode) => {
     if (!finish) { 

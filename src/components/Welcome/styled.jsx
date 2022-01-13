@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   @media ${device.laptop} { 
     flex-direction: column;
   }
+  @media ${device.tablet} and (orientation: landscape) {
+    flex-direction: row;
+  }
 `;
 
 Wrapper.displayName = 'Wrapper';

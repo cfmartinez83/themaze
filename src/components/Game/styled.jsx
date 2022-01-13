@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FontLarge, FontSmall } from 'styles/font';
+import { FontLarge, FontMedium, FontSmall } from 'styles/font';
 import { device } from 'styles/size';
 
 export const Wrapper = styled.div`
@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   @media ${device.laptop} { 
     flex-direction: column;
     justify-content: center;
+  }
+  @media ${device.tablet} and (orientation: landscape) {
+    flex-direction: row;
   }
 `;
 
@@ -29,6 +32,9 @@ export const Title = styled.div`
   text-align: center;
   padding: 10px;
   color: #212121;
+  @media ${device.tablet} and (orientation: landscape) {
+    ${ FontMedium }
+  }
 `;
 
 Title.displayName = 'Title';

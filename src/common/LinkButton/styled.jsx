@@ -29,7 +29,7 @@ export const StyledLinkButton = styled.a`
     transform: scale(1.05);
   }
   @media ${device.tablet} {
-    width: 35vw;
+    width: 40vw;
   }
 `;
 StyledLinkButton.displayName = 'StyledLinkButton';

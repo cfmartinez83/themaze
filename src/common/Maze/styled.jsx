@@ -10,8 +10,12 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   outline:none;
   @media ${device.tablet} {
-    height: 75vw;
-    width: 75vw;
+    height: 85vw;
+    width: 85vw;
+  }
+  @media ${device.tablet} and (orientation: landscape) {
+    height: 45vw;
+    width: 45vw;
   }
 `;
 

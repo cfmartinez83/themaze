@@ -40,7 +40,7 @@ export const WrapperButton = styled.button`
     }
   `}
   @media ${device.tablet} {
-    width: 35vw;
+    width: 40vw;
   }
 `;
 WrapperButton.displayName = 'WrapperButton';

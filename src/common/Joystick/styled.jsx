@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  box-shadow: 0.25rem 0.25rem #212121;
   display: flex;
   flex-direction: column;
   justify-content: center;

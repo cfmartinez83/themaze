@@ -8,7 +8,7 @@ const Win = ({ nickName, moves, time, playAgainCallback, history }) => {
   const handleVisitLeaderBoard  = () => history.push('/leaderboard');
   return <Wrapper>
     <Title>You COMPLETE the MAZE! </Title>
-    <Subtitle>D'ont forget to visit the leaderboard to check your score.</Subtitle>
+    <Subtitle>Don't forget to visit the leaderboard to check your score.</Subtitle>
     <Summary>
       <WrapperField>
         <Label>NickName:</Label>
