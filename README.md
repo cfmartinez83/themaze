@@ -12,6 +12,7 @@
 * React
 * Styled component
 * Pino
+* Firebase deployment
 
 ## Pages
 
