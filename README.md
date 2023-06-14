@@ -5,6 +5,7 @@
 * Random Mazes
 * Inteligent path searcher
 * Responsive game
+* Binary tree algorithm based on Mazes for Programmers by Jamis Buck with some own tweaks.
 * Incredible React Game challenge.
 
 ## Stack
