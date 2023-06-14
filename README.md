@@ -12,7 +12,6 @@
 * React
 * Styled component
 * Pino
-* 
 
 ## Pages
 
