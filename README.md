@@ -4,6 +4,7 @@
 
 * Random Mazes
 * Inteligent path searcher
+* Responsive game
 * Incredible React Game challenge.
 
 ## Stack
