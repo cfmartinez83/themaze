@@ -14,7 +14,7 @@
 * Pino
 * Firebase deployment
 * Redux
-* Absolte paths
+* Absolute paths
 * React Routes
 
 ## Pages
