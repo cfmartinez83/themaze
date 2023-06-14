@@ -29,3 +29,5 @@ https://themaze-dfa27.web.app/
 
 <img width="1464" alt="image" src="https://github.com/cfmartinez83/themaze/assets/2208812/653f083f-b724-4d17-a182-7e28c4d28d2e">
 
+<img width="1464" alt="image" src="https://github.com/cfmartinez83/themaze/assets/2208812/6bfa49a5-2bc0-42e0-8ad8-654a79aed982">
+
