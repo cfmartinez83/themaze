@@ -13,6 +13,9 @@
 * Styled component
 * Pino
 * Firebase deployment
+* Redux
+* Absolte paths
+* React Routes
 
 ## Pages
 
